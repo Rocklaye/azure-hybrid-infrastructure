@@ -1,6 +1,9 @@
 #!/usr/bin/env bash
 # ──────────────────────────────────────────────────────────────
 # Étape 4 — Supervision : Log Analytics + Azure Monitor sur les VMs
+# En clair : on branche l'« écran de contrôle ». On collecte les
+# mesures et les journaux des machines au même endroit, et on crée
+# une alerte automatique (ex. : prévenir si un serveur est surchargé).
 # Prérequis : 01 à 03 exécutés.
 # ──────────────────────────────────────────────────────────────
 set -euo pipefail

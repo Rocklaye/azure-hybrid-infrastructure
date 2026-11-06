@@ -1,6 +1,9 @@
 #!/usr/bin/env bash
 # ──────────────────────────────────────────────────────────────
 # Étape 3 — Calcul : VMs Linux et Windows Server dans snet-app
+# En clair : on installe les « ordinateurs » du cloud (les machines
+# virtuelles) qui feront tourner les applications. Elles n'ont pas
+# d'adresse publique : on y accède uniquement par le tunnel VPN.
 # Prérequis : 01 et 02 exécutés.
 # Bonne pratique : mots de passe / clés via Azure Key Vault, jamais en clair.
 # ──────────────────────────────────────────────────────────────

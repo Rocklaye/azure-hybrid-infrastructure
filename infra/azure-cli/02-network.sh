@@ -1,7 +1,10 @@
 #!/usr/bin/env bash
 # ──────────────────────────────────────────────────────────────
 # Étape 2 — Réseau : VNet, sous-réseaux, NSG et passerelle VPN
-# site-to-site vers le datacenter on-premise.
+# En clair : on construit le réseau privé du cloud (les « pièces »
+# où iront les machines), on met un videur a l'entree (le NSG qui
+# filtre le trafic), puis on ouvre le tunnel securise (VPN) vers les
+# serveurs de l'entreprise.
 # Prérequis : avoir sourcé 01-resource-group.sh
 # ──────────────────────────────────────────────────────────────
 set -euo pipefail
