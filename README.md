@@ -11,7 +11,7 @@
 
 ---
 
-## 💡 Objectif du projet ?
+## 💡 Objectif du projet 
 
 Une entreprise possède déjà ses **serveurs sur place** (dans ses locaux). Elle veut aussi utiliser le **cloud de Microsoft (Azure)** pour héberger de nouvelles machines, sans tout déménager d'un coup. Ce projet documente **comment on branche les deux mondes ensemble** pour qu'ils fonctionnent comme un seul réseau.
 
