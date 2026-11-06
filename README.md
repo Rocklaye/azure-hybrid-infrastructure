@@ -95,8 +95,8 @@ azure-hybrid-infrastructure/
 
 Deux manières de reproduire l'installation (détail dans [`docs/deployment-guide.md`](docs/deployment-guide.md)) :
 
-1. **Pas à pas (Azure CLI)** — on lance les scripts de [`infra/azure-cli/`](infra/azure-cli/) dans l'ordre. C'est **le plus pédagogique** : on voit chaque action se faire.
-2. **En un bloc (Bicep)** — on décrit l'infra une fois dans un fichier, et Azure la construit d'un coup, toujours de la même façon. C'est **le plus fiable pour reproduire**.
+1. **Pas à pas (Azure CLI)**  on lance les scripts de [`infra/azure-cli/`](infra/azure-cli/) dans l'ordre. C'est **le plus pédagogique** : on voit chaque action se faire.:
+2. **En un bloc (Bicep)** : on décrit l'infra une fois dans un fichier, et Azure la construit d'un coup, toujours de la même façon. C'est **le plus fiable pour reproduire**.
 
 > 🔒 **Sécurité** : aucun mot de passe n'est écrit dans le code. Les secrets (mots de passe, clé du tunnel VPN) sont gardés dans **Azure Key Vault**, le coffre-fort d'Azure.
 
