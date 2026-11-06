@@ -1,8 +1,8 @@
-# Guide de déploiement — infrastructure hybride Azure
+# Guide de déploiement - infrastructure hybride Azure
 
 Déroulé complet pour reproduire l'architecture. Deux approches : runbook Azure CLI (pédagogique, commande par commande) ou Bicep (idempotent).
 
-> **En clair** : ce guide suit l'ordre logique de l'installation — d'abord on prépare l'espace et le réseau du cloud, ensuite on ouvre le tunnel sécurisé vers les serveurs de l'entreprise, puis on unifie les comptes des employés, on installe les machines, et on finit par la surveillance. Chaque étape ci-dessous correspond à un script court et commenté.
+> **En clair** : ce guide suit l'ordre logique de l'installation  d'abord on prépare l'espace et le réseau du cloud, ensuite on ouvre le tunnel sécurisé vers les serveurs de l'entreprise, puis on unifie les comptes des employés, on installe les machines, et on finit par la surveillance. Chaque étape ci-dessous correspond à un script court et commenté.
 
 > Toutes les valeurs sont génériques. Les secrets (mots de passe VM, clé partagée VPN) passent par **Azure Key Vault**, jamais en clair.
 

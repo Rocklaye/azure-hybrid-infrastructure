@@ -3,9 +3,9 @@
 Centraliser métriques, journaux et alertes des ressources Azure (et, via les agents, des VMs) dans un espace de travail Log Analytics unique.
 
 ## Composants
-- **Log Analytics Workspace** — stockage et requêtes (KQL) des journaux.
-- **Azure Monitor Agent (AMA)** + **Data Collection Rules (DCR)** — collecte sur les VMs Linux/Windows.
-- **Alertes** — métriques (CPU, mémoire, disque) et requêtes de journaux.
+- **Log Analytics Workspace** : stockage et requêtes (KQL) des journaux.
+- **Azure Monitor Agent (AMA)** + **Data Collection Rules (DCR)** : collecte sur les VMs Linux/Windows.
+- **Alertes** : métriques (CPU, mémoire, disque) et requêtes de journaux.
 
 ## Mise en place
 Voir `infra/azure-cli/04-monitoring.sh`. En résumé :

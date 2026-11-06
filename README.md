@@ -11,7 +11,7 @@
 
 ---
 
-## 💡 En clair : c'est quoi ce projet ?
+## 💡 Objectif du projet ?
 
 Une entreprise possède déjà ses **serveurs sur place** (dans ses locaux). Elle veut aussi utiliser le **cloud de Microsoft (Azure)** pour héberger de nouvelles machines, sans tout déménager d'un coup. Ce projet documente **comment on branche les deux mondes ensemble** pour qu'ils fonctionnent comme un seul réseau.
 
@@ -20,7 +20,7 @@ Une image simple : imaginez le datacenter de l'entreprise comme une **maison**, 
 1. 🔌 **Creuser un tunnel privé et sécurisé** (le VPN) entre la maison et le bureau, pour qu'ils se parlent comme s'ils étaient dans la même pièce.
 2. 🏢 **Aménager le bureau à distance** : créer des espaces (réseaux), y installer des ordinateurs (machines virtuelles).
 3. 🪪 **Utiliser le même badge d'accès partout** : les employés gardent un seul identifiant, qui fonctionne aussi bien à la maison que dans le bureau loué (identités synchronisées).
-4. 📊 **Installer une caméra de surveillance** : tout voir depuis un seul écran — qui consomme quoi, qu'est-ce qui plante, envoyer une alerte en cas de problème (supervision).
+4. 📊 **Installer une caméra de surveillance** : tout voir depuis un seul écran qui consomme quoi, qu'est-ce qui plante, envoyer une alerte en cas de problème (supervision).
 
 Le tout est **documenté étape par étape** et **automatisé** (des scripts refont le travail tout seuls), pour qu'un collègue puisse reproduire l'installation sans deviner.
 
@@ -60,7 +60,7 @@ Le tout est **documenté étape par étape** et **automatisé** (des scripts ref
 |--------|-----------------|------------------------------|
 | Le réseau du cloud | VNet, sous-réseaux, NSG | Des « pièces » séparées et un videur à l'entrée : chaque machine est rangée au bon endroit et seul le trafic autorisé passe |
 | Le tunnel | Passerelle VPN *site-to-site* (IPSec) | Le pont privé et chiffré entre les serveurs de l'entreprise et le cloud |
-| Les machines | VMs **Linux** et **Windows Server** | Les ordinateurs du cloud qui font tourner les applications — sans adresse publique, donc invisibles depuis Internet |
+| Les machines | VMs **Linux** et **Windows Server** | Les ordinateurs du cloud qui font tourner les applications sans adresse publique, donc invisibles depuis Internet |
 | Les identités | **Entra ID** + **Azure AD Connect**, rôles **RBAC** | Un seul compte par employé, valable partout ; chacun n'a accès qu'à ce qui le concerne |
 | La surveillance | **Azure Monitor** + **Log Analytics** | L'écran de contrôle : mesures, journaux, et alertes automatiques (ex. « serveur surchargé ») |
 | L'automatisation | Scripts **PowerShell** / **Python** | Faire l'inventaire et des rapports d'état tout seuls, au lieu de cliquer à la main |
@@ -89,7 +89,7 @@ azure-hybrid-infrastructure/
     └── monitoring.md            #    L'écran de contrôle (supervision)
 ```
 
-> **Par où commencer ?** Lire ce README, puis ouvrir [`docs/deployment-guide.md`](docs/deployment-guide.md) : il raconte l'installation du début à la fin. Les scripts de [`infra/azure-cli/`](infra/azure-cli/) sont volontairement courts et commentés — chaque ligne dit ce qu'elle fait.
+> **Par où commencer ?** Lire ce README, puis ouvrir [`docs/deployment-guide.md`](docs/deployment-guide.md) : il raconte l'installation du début à la fin. Les scripts de [`infra/azure-cli/`](infra/azure-cli/) sont volontairement inclus et commentés.
 
 ## 🚀 Comment on déploie
 
@@ -105,5 +105,3 @@ Deux manières de reproduire l'installation (détail dans [`docs/deployment-guid
 Azure (réseau, machines virtuelles, passerelle VPN, Entra ID, Azure Monitor) · Bicep · Azure CLI · PowerShell (module `Az`) · Python (`azure-identity`, `azure-mgmt-*`)
 
 ---
-
-*Projet maintenu par [Abdoulaye Aw](https://github.com/Rocklaye) · Infrastructure réseaux, IoT et cybersécurité.*

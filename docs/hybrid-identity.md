@@ -5,7 +5,7 @@ Unifier les identités entre l'Active Directory on-premise et Microsoft Entra ID
 ## Principe
 
 ```
-AD DS (on-premise)  ──  Azure AD Connect  ──►  Microsoft Entra ID
+AD DS (on-premise)  ──►  Azure AD Connect  ──►  Microsoft Entra ID
    utilisateurs            synchronisation          utilisateurs synchronisés
    groupes                 (toutes les 30 min)      + rôles RBAC Azure
 ```
