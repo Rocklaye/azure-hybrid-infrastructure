@@ -1,0 +1,30 @@
+# Secrets / configuration locale — ne JAMAIS committer
+*.env
+.env
+*.pem
+*.key
+*.pfx
+*.publishsettings
+azureauth.json
+secrets.*
+local.settings.json
+
+# Sorties de scripts / rapports
+inventaire-*.csv
+*.log
+
+# Azure / Bicep
+.azure/
+*.azcli
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# Éditeurs / OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
